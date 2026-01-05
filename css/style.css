@@ -1,0 +1,791 @@
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffbeb;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.header.scrolled {
+  transform: translateY(0);
+}
+
+.logo {
+  height: 5.2rem;
+  transition: all 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #4a0404;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #d70018;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #d70018;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #d70018;
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+
+.section-hero {
+  background-image: url("../asset/img/background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #8b0000;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  width: 100%;
+}
+
+/* --- Căn giữa nội dung --- */
+.hero-content-center {
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  padding-top: 100px;
+}
+
+/* --- CẤU HÌNH CHUNG --- */
+.hero-title {
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 10;
+  padding: 20px 0;
+}
+
+/* --- DÒNG 1: TẾT BÍNH NGỌ (Cỡ lớn nhất, hiệu ứng mạnh nhất) --- */
+.title-top {
+  /* 1. KÍCH THƯỚC FONT */
+  font-size: 9.9rem;
+  display: block;
+  margin-bottom: 5px;
+  padding: 15px 0 5px 0;
+  line-height: 1.2;
+
+  /* Màu chữ Vàng Kim (Gradient) */
+  background-image: linear-gradient(
+    to bottom,
+    #fff9d9 20%,
+    #ffd700 50%,
+    #cf9909 100%
+  );
+
+  /* Bắt buộc có 2 dòng này để màu ăn vào chữ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Hiệu ứng bóng đổ màu đỏ đậm */
+  filter: drop-shadow(4px 4px 0px #8b0000);
+}
+
+/* --- DÒNG 2: SLOGAN (Cỡ nhỏ hơn, gradient nhẹ hơn) --- */
+.title-main {
+  /* 1. KÍCH THƯỚC FONT */
+  font-size: 5.04rem;
+  display: block;
+  padding: 5px 0 10px 0;
+  line-height: 1.2;
+
+  /* Màu chữ Vàng Kim (Gradient) */
+  background-image: linear-gradient(
+    to bottom,
+    #fff9d9 20%,
+    #ffd700 50%,
+    #cf9909 100%
+  );
+
+  /* Bắt buộc có 2 dòng này để màu ăn vào chữ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Hiệu ứng bóng đổ màu đỏ đậm */
+  filter: drop-shadow(4px 4px 0px #8b0000);
+}
+
+/* --- Style cho Nút bấm --- */
+.hero-btn-box {
+  margin-top: 50px;
+}
+
+.btn-tet-vip {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #8b0000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  /* Padding tạo hình oval ngang */
+  padding: 20px 90px;
+  border-radius: 50px;
+
+  /* Nền vàng kim gradient */
+  background: linear-gradient(180deg, #ffe680 0%, #ffd700 50%, #f4c430 100%);
+
+  /* Viền đỏ */
+  border: 4px solid #8b0000;
+
+  /* Bóng đổ */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.2s ease;
+}
+
+/* Hiệu ứng khi rê chuột */
+.btn-tet-vip:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.05);
+}
+
+/* Hiệu ứng khi ấn nút */
+.btn-tet-vip:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* --- RESPONSIVE CHO ĐIỆN THOẠI --- */
+@media (max-width: 600px) {
+  .hero-content-center {
+    padding-top: 60px;
+  }
+
+  .title-top {
+    font-size: 5.76rem;
+    margin-bottom: 3px;
+    padding: 10px 0 3px 0;
+  }
+
+  .title-main {
+    font-size: 3.24rem;
+    padding: 3px 0 8px 0;
+  }
+
+  .btn-tet-vip {
+    padding: 18px 70px;
+    font-size: 1.8rem;
+  }
+
+  .problem-line-1,
+  .problem-line-2 {
+    font-size: 2.8rem;
+  }
+
+  .problem-line-3 {
+    font-size: 2.4rem;
+  }
+
+  .problem-line-4,
+  .problem-line-5 {
+    font-size: 2rem;
+  }
+
+  .problem-section-title {
+    font-size: 2.4rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .problem-grid {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  .problem-grid--reverse {
+    direction: ltr;
+  }
+
+  .problem-list-item {
+    font-size: 1.8rem;
+  }
+
+  .problem-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/**************************/
+/* SECTION 2: HEADLINE (5 dòng tiêu đề) */
+/**************************/
+
+.section-headline {
+  padding: 9.6rem 0;
+  background-color: #f5d576;
+}
+
+.problem-heading {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Dòng 1: Tết này con sẽ hỏi ÍT lại, hiểu NHIỀU hơn */
+.problem-line-1 {
+  font-size: 4.4rem;
+  font-weight: 800;
+  color: #d32f2f;
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+}
+
+/* Dòng 2: và Ba Mẹ tha hồ THẢNH THƠI! */
+.problem-line-2 {
+  font-size: 4.4rem;
+  font-weight: 800;
+  color: #d32f2f;
+  line-height: 1.3;
+  margin-bottom: 3.2rem;
+}
+
+/* Dòng 3: 😂 Cảnh báo */
+.problem-line-3 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+}
+
+/* Dòng 4: Tết này con "bận" lắm */
+.problem-line-4 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+}
+
+/* Dòng 5: chẳng có thời gian xem điện thoại, chơi ipad đâu! */
+.problem-line-5 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.3;
+}
+
+/**************************/
+/* SECTION 3: PROBLEM (2 phần với ảnh) */
+/**************************/
+
+.section-problem {
+  padding: 9.6rem 0;
+  background-color: #a84842;
+}
+
+/* Problem Section - 2 phần */
+.problem-section {
+  margin-top: 6.4rem;
+}
+
+.problem-section:first-of-type {
+  margin-top: 0;
+}
+
+.problem-section-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #ffd700;
+  text-align: center;
+  margin-bottom: 4.8rem;
+  line-height: 1.4;
+}
+
+/* Grid 2 cột */
+.problem-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.4rem;
+  align-items: center;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.problem-grid--reverse {
+  direction: rtl;
+}
+
+.problem-grid--reverse > * {
+  direction: ltr;
+}
+
+/* Nội dung */
+.problem-content {
+  padding: 2.4rem;
+}
+
+.problem-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.problem-list-item {
+  font-size: 2.4rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.problem-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  flex-shrink: 0;
+  margin-top: 0.4rem;
+}
+
+.problem-list-item--negative .problem-icon {
+  color: #ff6b6b;
+}
+
+.problem-list-item--positive .problem-icon {
+  color: #4caf50;
+}
+
+/* Ảnh */
+.problem-image {
+  width: 100%;
+}
+
+.problem-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 5px solid #f5d576;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
+}
+
+/**************************/
+/* SOLUTION SECTION */
+/**************************/
+
+.section-solution {
+  padding: 9.6rem 0;
+  background-color: #a84842;
+}
+
+.section-solution .subheading {
+  color: #ffd700;
+}
+
+.section-solution .heading-secondary {
+  color: #fff;
+}
+
+.solution-subheading {
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 6.4rem;
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.feature {
+  text-align: center;
+  padding: 3.2rem 2.4rem;
+  border-radius: 11px;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.feature:hover {
+  background-color: #fff;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
+  transform: translateY(-0.5rem);
+}
+
+.feature:hover .feature-title {
+  color: #d70018;
+}
+
+.feature:hover .feature-text {
+  color: #555;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  font-family: "Coiny", cursive;
+  font-weight: 400;
+  color: #ffd700;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.5px;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #fff;
+}
+
+.final-text {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffd700;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+/**************************/
+/* PRODUCT SECTION */
+/**************************/
+
+.section-product {
+  padding: 9.6rem 0;
+  background-color: #fff;
+}
+
+.product-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.4rem;
+  align-items: center;
+  margin-top: 6.4rem;
+  background-color: #fffbeb;
+  padding: 4.8rem;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+.product-text-box {
+  /* All text content goes here */
+}
+
+.product-price-box {
+  text-align: center;
+  margin-bottom: 3.2rem;
+  padding: 2.4rem;
+  background-color: #fff;
+  border-radius: 11px;
+}
+
+.product-price {
+  font-size: 6.2rem;
+  font-family: "Coiny", cursive;
+  font-weight: 400;
+  color: #d70018;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.product-slogan {
+  font-size: 2rem;
+  font-style: italic;
+  color: #4a0404;
+  font-weight: 600;
+}
+
+.product-img {
+  width: 100%;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+
+.product-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.15);
+}
+
+.product-details {
+  /* Details are part of the text box now */
+}
+
+.product-details .list-item {
+  background-color: #fff;
+  padding: 1.6rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+}
+
+.product-details .list-item:hover {
+  transform: translateX(0.5rem);
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.05);
+}
+
+/**************************/
+/* USP SECTION */
+/**************************/
+.section-usp {
+  padding: 9.6rem 0;
+  background-color: #fffbeb;
+}
+
+.usp-item {
+  background-color: #fff;
+  padding: 4rem;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.usp-item:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+}
+
+.usp-item .heading-tertiary {
+  color: #d70018;
+  font-size: 2.6rem;
+  font-family: "Coiny", cursive;
+  font-weight: 400;
+}
+
+.usp-item p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/**************************/
+/* CTA SECTION */
+/**************************/
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta-box {
+  background-image: linear-gradient(135deg, #ffd700 0%, #d70018 100%);
+  color: #4a0404;
+  padding: 6.4rem;
+  border-radius: 11px;
+  text-align: center;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.cta-box .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-box p {
+  font-size: 2rem;
+  line-height: 1.7;
+  margin-bottom: 3.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.list-cta {
+  list-style: none;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-box .btn {
+  position: relative;
+  z-index: 1;
+  background-color: #4a0404;
+  color: #ffd700;
+  font-size: 2.4rem;
+  padding: 2rem 4rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.cta-box .btn:hover {
+  background-color: #fff;
+  color: #d70018;
+  transform: translateY(-3px);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.25);
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer {
+  padding: 9.6rem 0;
+  background-color: #4a0404;
+  color: #eee;
+  border-top: 3px solid #d70018;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4.8rem;
+}
+
+.footer .logo {
+  height: 5.2rem;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #888;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+  color: #ffd700;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.contacts p {
+  margin-bottom: 1.6rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #aaa;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #ffd700;
+  transform: translateX(3px);
+}
+
+.address-col {
+  text-align: right;
+}

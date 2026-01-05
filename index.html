@@ -2,226 +2,356 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hộp Lì Xì Tết - Novastars</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Coiny&family=Nunito:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Novastars - Hộp Lì Xì Tết</title>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="asset/logo/logo-full-color.png" alt="Novastars Logo" class="navbar-logo">
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#kids">Dành Cho Trẻ Em</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#adults">Dành Cho Người Lớn</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#corporate">Dành Cho Doanh Nghiệp</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <header class="hero section">
-        <div class="container">
-            <h1 class="display-4">Hộp Lì Xì Tết 2026</h1>
-            <p class="lead">Món Lì Xì Không Tiêu Hết</p>
-            <p>
-                Giải pháp quà Tết thông minh, thay thế lì xì tiền mặt bằng trải nghiệm
-                giáo dục, văn hóa và kết nối gia đình.
-            </p>
-            <a href="#contact" class="btn btn-primary btn-lg">Liên Hệ Đặt Hàng</a>
-        </div>
+    <header class="header">
+      <a href="#">
+        <img
+          class="logo"
+          alt="Novastars logo"
+          src="asset/logo/logo-full-color.png"
+        />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#problem">Vấn đề</a></li>
+          <li><a class="main-nav-link" href="#solution">Giải pháp</a></li>
+          <li><a class="main-nav-link" href="#product">Sản phẩm</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" href="#cta">Đặt hàng ngay</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <div class="wave-divider">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-    </div>
-
     <main>
-      <section id="kids" class="section">
-        <div class="container">
-          <div class="text-center mb-5 section-title">
-            <h2>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 100 100"><defs><path id="petal" d="M0,0 C5,15 15,15 20,0 C15,-15 5,-15 0,0"></path></defs><g transform="translate(50,50)"><use href="#petal" transform="rotate(0)"></use><use href="#petal" transform="rotate(72)"></use><use href="#petal" transform="rotate(144)"></use><use href="#petal" transform="rotate(216)"></use><use href="#petal" transform="rotate(288)"></use><circle cx="0" cy="0" r="10"></circle></g></svg>
-                Dành Cho Trẻ Em
-            </h2>
-            <p class="lead">
-              "Hộp giải cứu phụ huynh" giúp giảm thời gian xem tivi, tăng 200%
-              tiếng cười và hiểu biết văn hóa Tết.
-            </p>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-lg-6 mb-4 d-flex align-items-stretch">
-              <div class="product-card">
-                <h3>🧧 Hộp Lì Xì May Mắn</h3>
-                <p class="fs-4 price">299.000đ</p>
-                <p><strong>Gây nghiện trí tuệ - làm trẻ quên luôn điện thoại!</strong></p>
-                <ul>
-                  <li>Bộ <strong>26 truyện chủ đề Tết - Xuân - Ngựa</strong> (kèm audio).</li>
-                  <li>Bộ hoạt động trải nghiệm theo truyện.</li>
-                  <li>Bộ thẻ từ vựng tiếng Anh chủ đề Tết.</li>
-                  <li>Card game "Mời Thần Về Làng" và chuỗi trò chơi tư duy.</li>
-                  <li>Hướng dẫn các hoạt động ngày đầu năm mới.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-6 mb-4 d-flex align-items-stretch">
-              <div class="product-card">
-                <h3>🐴 Hộp Lì Xì Bính Ngọ</h3>
-                <p class="fs-4 price">349.000đ</p>
-                <p><strong>Hộp Tết vui đến mức ông bà cũng muốn chơi chung!</strong></p>
-                <ul>
-                  <li><strong>2 blind box Ngựa thần bí</strong> siêu hồi hộp.</li>
-                  <li>Board game <strong>"Săn Lì Xì"</strong> cho cả nhà.</li>
-                  <li>Bucketlist các hoạt động không thể không làm ngày Tết.</li>
-                  <li>Bộ thử thách ngày Tết siêu vui cho cả gia đình.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="text-center mt-4">
-            <h4>🎉 Ưu đãi sốc Tết 2026:</h4>
-            <p><strong>Combo 1:</strong> 1 Hộp Lì Xì May Mắn và 1 Hộp Lì Xì Bính Ngọ: <strong class="price">620.000đ + FREESHIP</strong></p>
-            <p><strong>Combo 2:</strong> 2 Hộp Lì Xì Bính Ngọ: <strong class="price">680.000đ + FREESHIP</strong></p>
-            <a href="#" class="btn btn-danger btn-lg">Đặt Hàng Ngay!</a>
-          </div>
-        </div>
-      </section>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-content-center">
+            <h1 class="hero-title">
+              <div class="title-top">TẾT BÍNH NGỌ</div>
+              <div class="title-main">TRAO QUÀ TRÍ TUỆ - NHẬN VẠN NIỀM VUI</div>
+            </h1>
 
-    <div class="wave-divider wave-flipped">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-    </div>
-
-      <section id="adults" class="section">
-        <div class="container">
-          <div class="text-center mb-5 section-title">
-             <h2>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 10h-4v6h4v-6z"></path><path d="M12 2a3 3 0 0 0-3 3v2a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path><path d="M8 21h8"></path><path d="M12 17v4"></path><path d="M5 7h14"></path></svg>
-                Dành Cho Người Lớn & Gia Đình
-             </h2>
-            <p class="lead">
-              Một không gian Tết thu nhỏ, nơi mọi người cất điện thoại và bắt đầu chơi - nói - cười cùng nhau.
-            </p>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-lg-12">
-              <div class="product-card">
-                <h3>🎁 Hộp Quà Xuân Bính Ngọ</h3>
-                <p>Đây không phải một hộp quà để trưng. Đây là một không gian Tết thu nhỏ.</p>
-                <ul>
-                  <li>Board game <strong>"Mời Thần Về Làng"</strong>: Chơi để nói chuyện, nói chuyện để hiểu nhau hơn.</li>
-                  <li>Board game <strong>"Săn Lì Xì"</strong>: Nhanh, vui, dễ nhập cuộc.</li>
-                  <li>Board game <strong>Xúc Xắc May Mắn</strong>: Gợi lại ký ức Tết xưa.</li>
-                  <li>Ô chữ Ngày Tết & Sudoku Tết.</li>
-                  <li>Sổ Mục Tiêu Năm Mới.</li>
-                  <li>Blind Box Ngựa Thần và bộ thẻ "Quyết Định Thần Tốc".</li>
-                </ul>
-                <p><strong>Phù hợp làm:</strong> Quà Tết cho nhân viên, lì xì tập thể, quà tri ân.</p>
-              </div>
+            <div class="hero-btn-box">
+              <a
+                href="https://shopee.vn/novastars999"
+                target="_blank"
+                class="btn-tet-vip"
+                >ĐẶT MUA NGAY</a
+              >
             </div>
           </div>
         </div>
       </section>
 
-    <div class="wave-divider">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-    </div>
-
-      <section id="corporate" class="section">
+      <!-- Section 2: Tiêu đề 5 dòng -->
+      <section id="headline" class="section-headline">
         <div class="container">
-          <div class="text-center mb-5 section-title">
-            <h2>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 9l4 -4l4 4"></path><path d="M16 15l-4 4l-4 -4"></path><path d="M3 12h18"></path></svg>
-                Dành Cho Doanh Nghiệp
-            </h2>
-            <p class="lead">
-              Một món quà cho con - nhưng là sự ghi nhận dành cho cha mẹ.
+          <div class="problem-heading">
+            <div class="problem-line-1">
+              Tết này con sẽ hỏi ÍT lại, hiểu NHIỀU hơn
+            </div>
+            <div class="problem-line-2">và Ba Mẹ tha hồ THẢNH THƠI!</div>
+            <div class="problem-line-3">😂 Cảnh báo</div>
+            <div class="problem-line-4">Tết này con "bận" lắm</div>
+            <div class="problem-line-5">
+              chẳng có thời gian xem điện thoại, chơi ipad đâu!
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: 2 phần với ảnh -->
+      <section id="problem" class="section-problem">
+        <div class="container">
+          <!-- Phần 1: Ba Mẹ thân mến -->
+          <div class="problem-section">
+            <h3 class="problem-section-title">
+              Ba Mẹ thân mến, Tết này con sẽ làm gì?
+            </h3>
+            <div class="problem-grid">
+              <div class="problem-content">
+                <ul class="problem-list">
+                  <li class="problem-list-item problem-list-item--negative">
+                    <ion-icon
+                      class="problem-icon"
+                      name="close-outline"
+                    ></ion-icon
+                    ><span>Cắm mặt vào điện thoại suốt ba ngày Tết?</span>
+                  </li>
+                  <li class="problem-list-item problem-list-item--negative">
+                    <ion-icon
+                      class="problem-icon"
+                      name="close-outline"
+                    ></ion-icon
+                    ><span>Chơi game đến mức quên cả chúc ông bà?</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="problem-image">
+                <img
+                  src="asset/img/kid-playing-phone.png"
+                  alt="Trẻ em chơi điện thoại"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Phần 2: Hay hỏi Ba Mẹ -->
+          <div class="problem-section">
+            <h3 class="problem-section-title">
+              Hay hỏi Ba Mẹ một loạt câu hỏi khiến mình "đứng hình 5 giây"
+            </h3>
+            <div class="problem-grid problem-grid--reverse">
+              <div class="problem-image">
+                <img
+                  src="asset/img/kid-looking-at-box.png"
+                  alt="Trẻ em nhìn hộp quà"
+                />
+              </div>
+              <div class="problem-content">
+                <ul class="problem-list">
+                  <li class="problem-list-item problem-list-item--positive">
+                    <ion-icon
+                      class="problem-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>"Vì sao có tết?"</span>
+                  </li>
+                  <li class="problem-list-item problem-list-item--positive">
+                    <ion-icon
+                      class="problem-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>"Ai là người "phát minh" ra bánh chưng?"</span>
+                  </li>
+                  <li class="problem-list-item problem-list-item--positive">
+                    <ion-icon
+                      class="problem-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span
+                      >"Vì sao năm ngoái là năm con Rắn, năm nay là năm con Ngựa
+                      chứ không phải con Rồng?"</span
+                    >
+                  </li>
+                  <li class="problem-list-item problem-list-item--positive">
+                    <ion-icon
+                      class="problem-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span
+                      >Và đỉnh điểm là 1000 lần hỏi, 1000 lần rủ " Mẹ ơi, chơi
+                      trò gì cho vui đi!"</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="solution" class="section-solution">
+        <div class="container">
+          <span class="subheading">Giải pháp từ Novastars</span>
+          <h2 class="heading-secondary">
+            NOVASTARS CHẾ TẠO CHIẾC "HỘP GIẢI CỨU PHỤ HUYNH"
+          </h2>
+          <p class="solution-subheading">
+            Không chỉ là quà, đây là giải pháp giúp:
+          </p>
+          <div class="grid grid--4-cols">
+            <div class="feature">
+              <p class="feature-title">✅ Giảm ngay 80%</p>
+              <p class="feature-text">thời gian con dán mắt vào màn hình.</p>
+            </div>
+            <div class="feature">
+              <p class="feature-title">✅ Giảm 90%</p>
+              <p class="feature-text">câu hỏi khiến Ba Mẹ bối rối.</p>
+            </div>
+            <div class="feature">
+              <p class="feature-title">✅ Tăng 200%</p>
+              <p class="feature-text">
+                tiếng cười qua các hoạt động văn hóa Tết Việt.
+              </p>
+            </div>
+            <div class="feature">
+              <p class="feature-title">✅ Tăng 300%</p>
+              <p class="feature-text">
+                khả năng tư duy - quan sát - sáng tạo - vận động.
+              </p>
+            </div>
+          </div>
+          <div class="center-text margin-top-lg">
+            <p class="final-text">
+              Con sẽ có một kỳ nghỉ Tết bận rộn nhưng vui vẻ, đắm mình trong các
+              câu chuyện mùa xuân và văn hóa truyền thống.
             </p>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <h4>Lợi ích cho Doanh nghiệp</h4>
-              <ul>
-                <li>✔️ Thể hiện sự quan tâm đến con em & gia đình nhân viên.</li>
-                <li>✔️ Góp phần giữ gìn văn hóa Tết Việt.</li>
-                <li>✔️ Tạo phúc lợi khác biệt - dễ truyền thông nội bộ.</li>
-                <li>✔️ Gia tăng sự hài lòng & gắn bó của người lao động.</li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <h4>Chính sách Doanh nghiệp</h4>
-              <ul>
-                <li>Chiết khấu theo số lượng.</li>
-                <li>Hỗ trợ gói quà, thiệp chúc Tết, logo doanh nghiệp.</li>
-                <li>Giao hàng đồng loạt hoặc theo danh sách nhân viên.</li>
-              </ul>
+        </div>
+      </section>
+
+      <section id="product" class="section-product">
+        <div class="container">
+          <span class="subheading">Chi tiết sản phẩm</span>
+          <h2 class="heading-secondary">🐴 HỘP LÌ XÌ BÍNH NGỌ</h2>
+          <div class="product-box">
+            <img
+              src="asset/img/li-xi-binh-ngo-2.jpg"
+              class="product-img"
+              alt="Chi tiết sản phẩm Hộp Lì Xì Bính Ngọ"
+            />
+            <div class="product-text-box">
+              <div class="product-price-box">
+                <p class="product-price">349.000đ</p>
+                <p class="product-slogan">
+                  "Hộp Tết vui đến mức cả xóm muốn chơi chung"
+                </p>
+              </div>
+              <div class="product-details">
+                <h3 class="heading-tertiary">
+                  Bên trong hộp là cả một thế giới thú vị:
+                </h3>
+                <ul class="list">
+                  <li class="list-item">
+                    <span
+                      ><strong>🎁 2 Blind Box Ngựa Thần Bí:</strong> Hồi hộp,
+                      "choáng nhẹ" và thích thú khi săn được những Thần thú nổi
+                      tiếng thế giới.</span
+                    >
+                  </li>
+                  <li class="list-item">
+                    <span
+                      ><strong>🎲 Board Game Săn Lì Xì:</strong> Trò chơi khiến
+                      cả nhà cười muốn xỉu.</span
+                    >
+                  </li>
+                  <li class="list-item">
+                    <span
+                      ><strong>📝 Bucketlist Ngày Tết:</strong> Danh sách các
+                      hoạt động không thể không làm vào ngày Tết.</span
+                    >
+                  </li>
+                  <li class="list-item">
+                    <span
+                      ><strong>🧩 Bộ Thử Thách Siêu Cuốn:</strong> Con có thể
+                      chơi một mình hoặc kéo cả ông bà, bố mẹ, anh chị em vào
+                      chơi cùng.</span
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="text-center mt-5" id="contact">
-            <h4>Liên Hệ Để Nhận Catalog & Báo Giá</h4>
+        </div>
+      </section>
+
+      <section id="usp" class="section-usp">
+        <div class="container grid grid--3-cols">
+          <div class="usp-item">
+            <h3 class="heading-tertiary">Kết nối đa thế hệ</h3>
             <p>
-              Chúng tôi rất mong được đồng hành cùng Quý Doanh nghiệp trong mùa
-              Tết 2026.
+              Các bậc "lão niên" thì rưng rưng nhớ lại trò chơi tuổi thơ, còn
+              các bạn trẻ thì đòi chơi đi chơi lại.
             </p>
-            <p><strong>Email: [Điền email của bạn]</strong></p>
-            <p><strong>Số điện thoại: [Điền SĐT của bạn]</strong></p>
+          </div>
+          <div class="usp-item">
+            <h3 class="heading-tertiary">Giáo dục & Giải trí</h3>
+            <p>
+              Giúp con hiểu tinh thần Tết, phát triển kỹ năng xã hội và tư duy
+              phản xạ.
+            </p>
+          </div>
+          <div class="usp-item">
+            <h3 class="heading-tertiary">Giải trí lành mạnh</h3>
+            <p>Con vui chơi mà không cần điện thoại, máy tính.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="section-cta">
+        <div class="container">
+          <div class="cta-box">
+            <p>
+              Tết này, thay vì "đối đầu" với con và chiếc điện thoại, hãy để
+              Novastars đồng hành cùng Ba Mẹ!
+            </p>
+            <h2 class="heading-secondary">Hãy cùng tạo nên:</h2>
+            <ul class="list-cta">
+              <li>🌸 Một mùa Tết thông minh.</li>
+              <li>🌸 Một tuổi thơ giàu văn hóa Việt.</li>
+              <li>
+                🌸 Một cái Tết mà Ba Mẹ thực sự được thư giãn và hỉ hả nhìn con
+                "bận rộn".
+              </li>
+            </ul>
+            <p class="cta-text">
+              Ba Mẹ hãy nhanh tay đặt Hộp Lì Xì Tết để dành 1 cái Tết trọn vẹn,
+              nhiều niềm vui cho con và gia đình.
+            </p>
+            <a
+              href="https://shopee.vn/novastars999"
+              target="_blank"
+              class="btn btn--full"
+              >🛒 Đặt hàng ngay trên Shopee</a
+            >
           </div>
         </div>
       </section>
     </main>
 
-    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">▲</button>
-
     <footer class="footer">
-      <div class="container">
-        <img src="asset/logo/logo-full-white.png" alt="Novastars Logo" class="footer-logo mb-4">
-        <p>&copy; 2025 Novastars. All Rights Reserved.</p>
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo"
+              alt="Novastars logo"
+              src="asset/logo/logo-full-white.png"
+            />
+          </a>
+          <p class="copyright">
+            Copyright &copy; 2025 by Novastars, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Liên hệ</p>
+          <address class="contacts">
+            <p><a class="footer-link" href="tel:0987654321">0987654321</a></p>
+            <p>
+              <a class="footer-link" href="mailto:support@novastars.com"
+                >support@novastars.com</a
+              >
+            </p>
+          </address>
+        </div>
       </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

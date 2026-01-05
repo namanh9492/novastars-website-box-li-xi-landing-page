@@ -1,20 +1,32 @@
-// Scroll to top button
-const scrollTopBtn = document.getElementById("scrollTopBtn");
+// Header show/hide on scroll
+const header = document.querySelector(".header");
+let lastScroll = 0;
 
 window.onscroll = function () {
-  scrollFunction();
-};
+  const currentScroll = window.pageYOffset;
 
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
-    scrollTopBtn.style.display = "block";
+  // Show header when scrolling down past 100px
+  if (currentScroll > 100) {
+    header.classList.add("scrolled");
   } else {
-    scrollTopBtn.style.display = "none";
+    header.classList.remove("scrolled");
   }
-}
+
+  lastScroll = currentScroll;
+
+  // Scroll to top button
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+  if (scrollTopBtn) {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      scrollTopBtn.style.display = "block";
+    } else {
+      scrollTopBtn.style.display = "none";
+    }
+  }
+};
 
 function scrollToTop() {
   document.body.scrollTop = 0; // For Safari
@@ -22,18 +34,21 @@ function scrollToTop() {
 }
 
 // Fade in sections on scroll
-const sections = document.querySelectorAll('.section');
+const sections = document.querySelectorAll(".section");
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, {
-  threshold: 0.1
-});
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  {
+    threshold: 0.1,
+  }
+);
 
-sections.forEach(section => {
+sections.forEach((section) => {
   observer.observe(section);
 });
